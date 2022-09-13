@@ -24,10 +24,12 @@
   background-color: #A8DADC;
   position: top;
   top: 0;
-  width: 100%;
+  width: 99.2%;
   text-align: center;
   justify-content: center;
   margins: auto;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .topnav a {
@@ -39,6 +41,8 @@
   top-margin: 0px;
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
 }
 
 .topnav a:hover {
@@ -68,19 +72,22 @@ h1 {
 	margin-bottom: 40px;
 }
 
+/* Header 2 */
 h2 {
 	text-align: center;
 	background-color: #A8DADC;
 	font-size: 3em;
 	font-family: 'Poppins', sans-serif;
 	margin-top: 0px;
-	margin-left: 200px;
-	margin-right: 200px; 
+	margin-left: 10%;
+	margin-right: 10%; 
 	border-style: solid;
 	border-width: 8px;
 	border-color: #A8DADC;
 	border-radius: 30px
 }
+
+/* Header 3 */
 
 h3{
 	text-align: center;
@@ -89,6 +96,7 @@ h3{
 	font-family: 'Poppins', sans-serif;
 }
 
+/* Body Styling*/
 body{
 	margin-top: 0px; 
     margin-bottom: 0px; 
@@ -98,13 +106,15 @@ body{
 	background-color: #F1FAEE;
 }
 
+/* Paragrph styling*/
 p{
 	font-family: 'Exo-2', sans-serif;
 	font-size: 1.5em;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
 }
 
+/* Footer */
 footer{
 	margin-top: 50px;
 	width: 100%;
@@ -169,14 +179,15 @@ footer{
 	margins: auto;
 }
 
+
 .divCols{
 	width: 21%;
 	float: left;
 }
 
 .divParagraph{
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
 	padding-bottom: 40px;
 }
 
@@ -190,7 +201,7 @@ footer{
 }
 
 .paragraphMargin{
-	margin-left: 100px;
-	margin-right: 100px;
-	margin-bottom: 75px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 50px;
 }
