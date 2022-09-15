@@ -5,16 +5,14 @@
 		
 		<link rel="stylesheet" href="MyStyle.css">
 		<link rel="icon" type="image/x-icon" href="images/snoopy-dab.ico">
-		
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Arimo&family=Exo+2&family=Figtree&family=Poppins&family=Spline+Sans&display=swap" rel="stylesheet">		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="script.js"></script>
 		<title>About</title>
 	</head>
 	
 	<body>
 		<!-- Navigation Bar -->
-		<div class="topnav">
+		<div class="topnav" id="myTopnav">
 			  <a href="index.html">Home</a>
 			  <a class="active" href="About.html">About</a>
 			  <a href="Extracurriculars.html">Extracurriculars</a>
@@ -25,6 +23,9 @@
 			  <a href="STEM_I.html">STEM I</a>
 			  <a href="STEM_II.html">STEM II</a>
 			  <a href="Spanish.html">Spanish</a>
+			  <a href="javascript:void(0);" class="icon" onclick="showLinks()">
+		  		<i class="fa fa-bars"></i>
+		  	  </a>
 		</div>
 	
 		<h1>About Me</h1>
@@ -33,7 +34,7 @@
 			<h2>My Family</h2>
 			<div class="flex paragraphMargin">
 				<p>I was born in Massachusetts and lived in South Grafton for 4 years before I moved to Southborough, where I live today. I currently live with my mom, dad, and sister, who is off to Boston College this year! </p>
-				<img class="roundedborder centeredphoto floatright" style="width:32%; height: 20%" src="images/familyPhotoResize.jpg" alt="Family Photo" >	
+				<img class="roundedborder centeredphoto floatright" style="width:28%; justify-content: center; margins: auto;" src="images/familyPhotoResize.jpg" alt="Family Photo" >	
 			</div>
 		</div>
 		
@@ -46,7 +47,6 @@
 				I still enjoy playing with friends and enjoying the sport with others. Below is a clip from a past tournaments! </p>
 				<video class="roundedborder centeredvideo" width="480" height = "270" controls>
 					<source src="images/badminton.mp4" type="video/mp4">
-					Your video does not support the video tag.
 				</video>
 			</div>
 		</div>
@@ -64,6 +64,15 @@
 				</div>
 			</div>
 		</div>
+		
+		<!-- Footer -->
+		<footer>
+			<div class="divSpace">
+				<div class="divCols"><a class="footerLink" href="https://www.github.com/charlestang06" target="0">GitHub</a></div>
+				<div class="divCols"><a class="footerLink" href="https://www.linkedin.com/in/charlestang06/" target="0">Linkedin</a> </div>
+				<div class="divCols"><a class="footerLink" href="mailto:ctang5@wpi.edu">Email</a></div>
+			</div>
+		</footer>
 	
 	</body>
 </html>
