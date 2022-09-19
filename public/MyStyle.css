@@ -33,7 +33,7 @@
   justify-content: center;
   margin: auto;
   padding-top: 10px;
-  padding-left: 10px;
+  padding-left: 0.9%;
 }
 
 .topnav a {
@@ -93,7 +93,7 @@
 		float: right;
 		display: block;
 		padding: 1% 5%;
-		margin-right: 2%;
+		margin-right: 1%;
 		font-size: 5.5vw;
 	}
 	
