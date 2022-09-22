@@ -25,7 +25,7 @@
 /* Navigation Bar Styling from https://www.w3schools.com/Css/css_navbar.asp */
 .topnav {
   overflow: auto;
-  background-color: #A8DADC;
+  background: linear-gradient(90deg, #A8DADC, #D7BAFF);
   position: static;
   top: 0;
   width: 99.1%;
@@ -65,8 +65,19 @@
 	display: none;
 }
 
+.footerBox{}
+
+.footerBox a{
+	padding: 14px 10px;
+	border-radius: 8px;
+}
+
+.footerBox a:hover{
+	background-color: #a51835 ;
+}
+
 /* Made with the help of https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 800px){
 	.topnav #myLinks {
   		display: none;
   		padding-right: 10%;
@@ -122,7 +133,7 @@
 h1 {
 	margin-top: 0;
 	text-align: center;
-	background-color: #A8DADC;
+	background: linear-gradient(90deg, #A8DADC, #D7BAFF);
 	font-size: 10vw;
 	font-family: 'Poppins', sans-serif;
 	padding-left: 55px;
@@ -158,17 +169,17 @@ h3{
 
 /* Body Styling*/
 body{
-	margin-top: 0px; 
-    margin-bottom: 0px; 
-    margin-left: 0px; 
-    margin-right: 0px;
-    padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
 	background-color: #F1FAEE;
 	
 	/* From https://blog.hubspot.com/website/hide-scrollbar-css */
 	-ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll; 
+	scrollbar-width: none; /* for Firefox */
+	overflow-y: scroll;
 }
 
 /* From https://blog.hubspot.com/website/hide-scrollbar-css */
@@ -186,20 +197,56 @@ p{
 
 /* Footer */
 footer{
-	margin-top: 4%;
+	margin-top: auto;
 	position: static;
 	bottom: 0px;
-	bottom: 1px;
 	width: 100%;
 	height: 100%;
-	line-height: 75px;
+	line-height: 10vw;
 	font-family: 'Poppins', sans-serif;
 	background-color: #E63946;
+} 
+
+.gradient-color{
+	background: linear-gradient(90deg, #A8DADC, #D7BAFF);
+}
+/* Made with the help of https://blog.hubspot.com/website/css-fade-in#:~:text=In%20the%20CSS%2C%20use%20the,creates%20the%20fade-in%20effect. */
+.fade-in-header{
+	animation: fadeIn 1.5s;
+	-webkit-animation: fadeIn 1.5s;
+  	-moz-animation: fadeIn 1.5s;
+  	-o-animation: fadeIn 1.5s;
+  	-ms-animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0.1; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0.1; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0.1; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0.1; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0.1; }
+  100% { opacity: 1; }
 }
 
 .roundedborder{
 	border-style: solid;
-	border-width: 6px;
+	border-width: 2px;
 	border-color: #E63946;
 	border-radius: 5px;
 }
@@ -226,7 +273,6 @@ footer{
 .homeHeader{
 	margin-top: 0px;
 	text-align: center;
-	background-color: #A8DADC;
 	font-size: 10vw;
 	font-family: 'Poppins', sans-serif;
 	padding-left: 4%;
@@ -244,16 +290,16 @@ footer{
 
 .divSpace{
 	display: flex;
-	overflow: auto;
+	overflow: hidden;
 	width: 100%;
 	text-align: center;
-	justify-content: center;
 	margin: auto;
+	justify-content: center;
 }
 
 
 .divCols{
-	width: 21%;
+	width: 20%;
 	float: left;
 }
 

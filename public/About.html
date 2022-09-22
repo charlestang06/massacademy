@@ -8,7 +8,7 @@
 		
 		<!-- Made with the help of https://www.w3schools.com/howto/howto_js_mobile_navbar.asp  -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script type="text/javascript" src="script.js"></script>
+		<script src="script.js"></script>
 		<title>About</title>
 	</head>
 	
@@ -29,13 +29,15 @@
 		  		<i class="fa fa-bars"></i>
 		  	  </a>
 		</div>
-	
-		<h1>About Me</h1>
+		
+		<div class="gradient-color">
+			<h1 class="fade-in-header">About Me</h1>
+		</div>
 		
 		<div>
 			<h2>My Family</h2>
 			<div class="paragraphMargin">
-				<p>I was born in Massachusetts and lived in South Grafton for 4 years before I moved to Southborough, where I live today. I currently live with my mom, dad, and sister, who is off to Boston College this year! </p>
+				<p>I was born in Massachusetts and lived in South Grafton for 4 years before I moved to Southborough, where I live today. I currently live with my mom, dad, and sister, who is off to <a class="hyperlink" href="https://www.bc.edu/" target="0">Boston College</a> this year! </p>
 				<img class="roundedborder centeredphoto" style="width:50%; height:50%; justify-content: center; margin: auto;" src="images/familyPhotoResize.jpg" alt="Family Photo" >	
 			</div>
 		</div>
@@ -46,8 +48,8 @@
 				<p> Since I was 9, I have played badminton competitively. 
 				I play at the <a class="hyperlink" href="https://www.bostonbadminton.com" target="0"> Boston Badminton Club</a> 
 				located in Westborough and have traveled to competitions across the U.S. The highest rank I achieved was #6 in my age group for Boys Doubles. Although I do not play as many competitions now due to the COVID-19 pandemic, 
-				I still enjoy playing with friends and enjoying the sport with others. Below is a clip from a past tournaments! </p>
-				<video class="centeredvideo" width="480px" controls muted>
+				I still enjoy playing with friends and enjoying the sport with others. Below is a clip from a past tournament! </p>
+				<video class="centeredvideo" width="480" controls muted>
 					<source src="images/badminton.mp4" type="video/mp4">
 				</video>
 			</div>
@@ -56,7 +58,7 @@
 		<div>
 			<h2>Travel</h2>
 			<div class="paragraphMargin">
-				<p>I enjoy traveling to new places with my family. Some of my favorite vacations include places such as New York City, Alaska, Hawaii, China, Banff, and Amsterdam. However, COVID-19 has made travel much harder, and we have not been able to go to as many places as before. My family’s most recent trip was to Prince Edward Island and New Brunswick in Canada.</p>
+				<p>I enjoy traveling to new places with my family. Some of my favorite vacations include places such as New York City, Alaska, Hawaii, China, Banff, and Amsterdam. However, COVID-19 has made travel more difficult, and we have not been able to go to as many places as before. My family’s most recent trip was to Prince Edward Island and New Brunswick in Canada.</p>
 		
 		<!-- Mrs. Tarrico said not to style in HTML... images are okay -->
 				<div class="centeredphoto">
@@ -70,9 +72,24 @@
 		<!-- Made with the help of https://www.w3schools.com/TAgs/tag_footer.asp-->
 		<footer>
 			<div class="divSpace">
-				<div class="divCols"><a class="footerLink" href="https://www.github.com/charlestang06" target="0">GitHub</a></div>
-				<div class="divCols"><a class="footerLink" href="https://www.linkedin.com/in/charlestang06/" target="0">Linkedin</a> </div>
-				<div class="divCols"><a class="footerLink" href="mailto:ctang5@wpi.edu">Email</a></div>
+			
+				<div class="divCols">
+					<div class="footerBox">
+						<a class="footerLink" href="https://www.github.com/charlestang06" target="0">GitHub</a>
+					</div>
+				</div>
+				
+				<div class="divCols">
+					<div class="footerBox">
+						<a class="footerLink" href="https://www.linkedin.com/in/charlestang06/" target="0">Linkedin</a>
+					</div>
+				</div>
+				
+				<div class="divCols">
+					<div class="footerBox">
+						<a class="footerLink" href="mailto:ctang5@wpi.edu">Email</a>
+					</div>
+				</div>
 			</div>
 		</footer>
 	
