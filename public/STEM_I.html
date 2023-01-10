@@ -35,13 +35,195 @@
 		</div>
 		
 		<div class="paragraphMargin">
-			<p>STEM 1 / Science Technical Writing taught by Dr. Crowthers, we conduct independent research projects on a topic of our choice over the course of 5 months. We learn about reading scientific literature, brainstorming techniques, and more technical skills in academia. 
-			</P>
-			
-			<p>This page is under construction :)</p>
+			<p>STEM 1 / Science Technical Writing taught by Dr. Crowthers, we
+			conduct independent research projects on a topic of our choice over
+			the course of 5 months. We learn about reading scientific literature,
+			brainstorming techniques, and more technical skills in academia. In A
+			term, we brainstormed ideas and conducted background research for our
+			independent project. In B term, we wrote a grant proposal for our
+			project and presented a poster at our December Fair event.</p>
 		</div>
+
+	<h2 class="stemtitle">
+		A Semi-trailer Truck Right-Hook Turn Blind Spot Alert System for
+		Detecting Vulnerable Road Users Using Transfer Learning
+		</h2>
+	
+	<div class="paragraphMargin">
+		<p>My project designed a cyclist detection system using deep learning
+			techniques. The goal of my project was to improve cyclist safety by
+			eliminating blind spots in semi-trailer trucks and assist drivers.
+			The final product proved to be successful in field testing. Scroll
+			down to read more about my research.</p>
+	</div>
+	
+	<div class="paragraphMargin">
+		<h3>Abstract</h3>
+
+		<p class="stemwords">This study aims to reduce the number of truck-cyclist
+			collisions, which are often caused by semi-trailer trucks making
+			right-hook turns and poor driver attention to blind spots. To achieve
+			this, we designed a visual-based blind spot warning system that can
+			detect cyclists for semi-trailer truck drivers. First, several 90%
+			accurate object detection models, such as the EfficientDet Lite 1 and
+			SSD MobileNetV2, were created using state-of-the-art lightweight deep
+			learning architectures fine-tuned on a newly proposed cyclist image
+			dataset composed of a diverse set of over 20,000 images, which were
+			used to locate and detect cyclists actively. Next, the object
+			detection model was deployed onto a Google Coral Dev Board
+			mini-computer with a camera module and analyzed for speed, reaching
+			inference times as low as 15 milliseconds. Lastly, the end-to-end
+			blind spot detection device was tested in real-time to model traffic
+			scenarios and analyzed further for performance and feasibility. We
+			concluded that this portable blind spot alert device can accurately
+			and quickly detect cyclists and have the potential to significantly
+			improve cyclist safety. Future studies could determine the
+			feasibility of the proposed device in the trucking industry and
+			improvements to cyclist collisions over time.</p>
+			
+		<p class="stemwords">Keywords: <i>Cyclist safety, blind spots, vulnerable road users,
+			object detection, semi-trailer trucks</i></p>
+
+		<img class="roundedborder centeredphoto"
+			style="width: 50%; height: 50%; justify-content: center; margin: auto;"
+			src="images/graphicalabstract.jpg" alt="Graphical Abstract">
+	</div>
+	
+	<div class="paragraphMarginEngineering center">
+		<h3>Research Proposal</h3>
 		
-		<!-- Made with the help of https://www.w3schools.com/TAgs/tag_footer.asp-->
+		<p>Click <a class="hyperlink" href="STW.html">here to read supporting project documents.</a></p>
+		
+	</div>
+	
+	<div class="flex paragraphMarginEngineering">
+		<div class="center">
+			<h3 class="engineering">Engineering Problem</h3>
+		</div>
+		<div class="center">
+			<h3 class="engineering">Engineering Goal</h3>
+		</div>
+	</div>
+	
+	<div class="flex paragraphMarginEngineering">
+		<p class="stemwords">Semi-trailer truck drivers often have trouble
+			identifying cyclists in their blind spots when making right-hand
+			turns which can cause cyclist-truck collisions.</p>
+		<p class="stemwords floatright">The overall aim of this project was to
+			engineer a device that can detect cyclists in a truck’s right-rear
+			blind spot and provide alerts for semi-trailer truck drivers.</p>
+	</div>
+	
+	<div class="paragraphMargin">
+		<h3>Background</h3>
+
+		<p class="stemwords">Cyclists often face risks when traveling
+			along a road or path with other motorized vehicles; in the U.S., over
+			1,000 cyclists die in road accidents, and 130,000 more are injured
+			yearly (Centers for Disease Control and Prevention [CDC], 2022). Over
+			71% of cyclist collisions happen in urban areas, with 30% of
+			collisions happening at intersections. These cyclist accidents can be
+			attributed to a lack of visual attention, including distraction,
+			which is a leading cause of over 55% of vehicle-cyclist collisions
+			(Jannat et al., 2020). One type of collision that frequently occurs
+			between cyclists and vehicles is in a right-hook turn. Right-hook
+			collisions occur at intersections when right-turning vehicles collide
+			with a cyclist moving straight forwards along the right side of the
+			road. These types of collisions occur when drivers do not detect
+			cyclists in their oncoming blind spots or when cyclists do not
+			observe that a driver is going to take a right turn. Additionally,
+			semi-trailer trucks are disproportionately involved in more severe
+			cyclist collisions compared to other vehicles (Richter & Sachs,
+			2017). When a semi-trailer truck makes a right turn, the blind spot
+			from the right rearview mirror increases as the view is blocked by
+			the trailer's body. This makes turns especially dangerous because
+			VRUs in this blind spot zone cannot be detected and face a high risk
+			of collision and fatality (Wang et al., 2022). There exists a need
+			for driver assistance systems in order to mitigate risks caused by
+			vehicle blind spots and prevent truck-cyclist collisions.</p>
+	</div>
+	
+	<div class="paragraphMargin">
+		<h3>Methodology</h3>
+
+		<p class="stemwords">The overall aim of this project was to
+			engineer a device that can detect cyclists in a truck’s right-rear
+			blind spot and provide alerts for semi-trailer truck drivers. We set
+			three major objectives. (1) Develop a system that can actively detect
+			cyclists with greater than 80% mAP. (2) Create warnings for cyclists
+			in a truck’s right-rear blind spot within a two-second interval. (3)
+			Make it portable and installable on most semi-trailer trucks.</p>
+
+		<p class="stemwords">First, a new proposed dataset was created by
+			combining the CIMAT cyclist dataset with images available from the
+			web and synthetic cyclist images in virtual urban environments from
+			Parallel Domain’s Open Synthetic Dataset for Improving Cyclist
+			Detection (Thomas et al., 2021). Then, the collected images were
+			annotated with bounding boxes using Roboflow API and exported as a
+			single-class cyclist Pascal VOC dataset with an 80-20%
+			train-validation split (Dwyer & Nelson, 2022; Everingham et al.,
+			2012).</p>
+
+		<p class="stemwords">Next, we fine-tuned a cyclist detection model
+			using the SSD MobileNet V2 and EfficientDet Lite model architecture
+			due to their lightweight memory and CPU/TPU usage and strong
+			performance with real-time detection (Sandler et al., 2018; Tan et
+			al., 2020). Using the Tensorflow Object Detection API and the
+			Tensorflow Lite Model Maker API, the dataset was used to fine-tune an
+			SSD MobileNet and EfficientDet Lite model for a total of 50 epochs.</p>
+
+		<p class="stemwords">Then, the trained cyclist detection models
+			were deployed onto the Google Coral Dev Board with a camera module.
+			The Google Coral Dev Board provides state-of-the-art performance
+			concerning object detection inferences in real-time applications
+			(Seshadri et al., 2022). Using the Google Coral Dev Board, the frames
+			per second (FPS) of each object detection model’s inferences were
+			also recorded.</p>
+
+		<p class="stemwords">Finally, we constructed a real-time testing
+			environment with a cyclist, a fixed mount for the blind spot device,
+			and the blind spot device. The cyclist was guided down a straight
+			path to simulate a through-going cyclist. The device was tested
+			qualitatively for its effectiveness in detecting cyclists from the
+			viewpoint of a truck cab and for inference speed.</p>
+	</div>
+	
+	<div class="paragraphMargin">
+		<h3>Figures</h3>
+
+		<p class="stemwords">In construction.</p>
+	</div>
+	
+	<div class="paragraphMargin">
+		<h3>Analysis</h3>
+
+		<p class="stemwords">In construction.</p>
+	</div>
+	
+	<div class="paragraphMargin">
+		<h3>Discussion/Conclusion</h3>
+
+		<p class="stemwords">In construction.</p>
+	</div>
+	
+	<div class="paragraphMargin">
+		<h3>References</h3>
+
+		<p class="stemwords">In construction.</p>
+	</div>
+	
+	<div class="paragraphMargin">
+		<h3>February Fair Poster</h3>
+
+		<p class="stemwords">In construction.</p>
+	</div>
+	
+		
+
+		
+		
+
+	<!-- Made with the help of https://www.w3schools.com/TAgs/tag_footer.asp-->
 		<footer>
 			<div class="divSpace">
 			
