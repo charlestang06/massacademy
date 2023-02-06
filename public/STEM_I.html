@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>STEM I</title>
-		<link rel="stylesheet" href="MyStyle.css">
-		<link rel="icon" type="image/x-icon" href="images/snoopy-dab.ico">
-		
-		<!-- Made with the help of https://www.w3schools.com/howto/howto_js_mobile_navbar.asp  -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="script.js"></script>
-	</head>
-	
-	<body>
-		<!--  Navigation Bar with the help of  https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
-		<div class="topnav" id="myTopnav">
-		  <a href="index.html">Home</a>
-		  <a href="About.html">About</a>
-		  <a href="Extracurriculars.html">Extracurriculars</a>
-		  <a href="CS.html">CS</a>
-		  <a href="Humanities.html">Humanities</a>
-		  <a href="Physics.html">Physics</a>
-		  <a href="Math.html">Math</a>
-		  <a class="active" href="STEM_I.html">STEM I</a>
-		  <a href="STEM_II.html">STEM II</a>
-		  <a href="Spanish.html">Spanish</a>
-		  <a href="javascript:void(0);" class="icon" onclick="showLinks()">
-		  		<i class="fa fa-bars"></i>
-		  </a>
-		</div>
-		
-		<div class="gradient-color">
-			<h1 class="fade-in-header">STEM I</h1>
-		</div>
-		
-		<div class="paragraphMargin">
-			<p>STEM 1 / Science Technical Writing taught by Dr. Crowthers, we
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>STEM I</title>
+
+	<link rel="icon" type="image/x-icon" href="images/snoopy-dab.ico">
+
+	<!-- Made with the help of https://www.w3schools.com/howto/howto_js_mobile_navbar.asp  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="MyStyle.css">
+</head>
+
+<body>
+	<!--  Navigation Bar with the help of  https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+	<div class="topnav" id="myTopnav">
+		<a href="index.html">Home</a>
+		<a href="About.html">About</a>
+		<a href="Extracurriculars.html">Extracurriculars</a>
+		<a href="CS.html">CS</a>
+		<a href="Humanities.html">Humanities</a>
+		<a href="Physics.html">Physics</a>
+		<a href="Math.html">Math</a>
+		<a class="active" href="STEM_I.html">STEM I</a>
+		<a href="STEM_II.html">STEM II</a>
+		<a href="Spanish.html">Spanish</a>
+		<a href="javascript:void(0);" class="icon" onclick="showLinks()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+	<div class="gradient-color">
+		<h1 class="fade-in-header">STEM I</h1>
+	</div>
+
+	<div class="paragraphMargin">
+		<p>STEM 1 / Science Technical Writing taught by Dr. Crowthers, we
 			conduct independent research projects on a topic of our choice over
 			the course of 5 months. We learn about reading scientific literature,
 			brainstorming techniques, and more technical skills in academia. In A
 			term, we brainstormed ideas and conducted background research for our
 			independent project. In B term, we wrote a grant proposal for our
 			project and presented a poster at our December Fair event.</p>
-		</div>
+	</div>
 
 	<h2 class="stemtitle">
 		A Semi-trailer Truck Right-Hook Turn Blind Spot Alert System for
 		Detecting Vulnerable Road Users Using Transfer Learning
-		</h2>
-	
+	</h2>
+
 	<div class="paragraphMargin">
 		<p>My project designed a cyclist detection system using deep learning
 			techniques. The goal of my project was to improve cyclist safety by
@@ -56,46 +59,49 @@
 			The final product proved to be successful in field testing. Scroll
 			down to read more about my research.</p>
 	</div>
-	
-	<div class="paragraphMargin">
-		<h3>Abstract</h3>
+	<div class="container">
+		<h3 class="paragraphMargin" style="margin-bottom: 0%">Abstract</h3>
+		<div class="row wrap">
+			<div class="col-md-7">
+				<p class="stemwords">This study aims to reduce the number of truck-cyclist
+					collisions, which are often caused by semi-trailer trucks making
+					right-hook turns and poor driver attention to blind spots. To achieve
+					this, we designed a blind spot warning system that can
+					detect cyclists. First, several 90%
+					accurate object detection models were created using lightweight deep
+					learning architectures fine-tuned on a newly proposed cyclist image
+					dataset composed of of over 20,000 images. Next, the object
+					detection models were deployed onto a Coral Dev Board
+					mini-computer with a camera module and analyzed for speed, reaching
+					inference times as low as 15 milliseconds. Lastly, the end-to-end
+					blind spot detection device was tested in real-time to model traffic
+					scenarios. We
+					concluded that this device can accurately
+					and quickly detect cyclists and have the potential to significantly
+					improve cyclist safety. Future studies could determine the
+					feasibility of the proposed device in the trucking industry and
+					improvements to cyclist collisions over time.</p>
 
-		<p class="stemwords">This study aims to reduce the number of truck-cyclist
-			collisions, which are often caused by semi-trailer trucks making
-			right-hook turns and poor driver attention to blind spots. To achieve
-			this, we designed a visual-based blind spot warning system that can
-			detect cyclists for semi-trailer truck drivers. First, several 90%
-			accurate object detection models, such as the EfficientDet Lite 1 and
-			SSD MobileNetV2, were created using state-of-the-art lightweight deep
-			learning architectures fine-tuned on a newly proposed cyclist image
-			dataset composed of a diverse set of over 20,000 images, which were
-			used to locate and detect cyclists actively. Next, the object
-			detection model was deployed onto a Google Coral Dev Board
-			mini-computer with a camera module and analyzed for speed, reaching
-			inference times as low as 15 milliseconds. Lastly, the end-to-end
-			blind spot detection device was tested in real-time to model traffic
-			scenarios and analyzed further for performance and feasibility. We
-			concluded that this portable blind spot alert device can accurately
-			and quickly detect cyclists and have the potential to significantly
-			improve cyclist safety. Future studies could determine the
-			feasibility of the proposed device in the trucking industry and
-			improvements to cyclist collisions over time.</p>
-			
-		<p class="stemwords">Keywords: <i>Cyclist safety, blind spots, vulnerable road users,
-			object detection, semi-trailer trucks</i></p>
+				<p class="stemwords">Keywords: <i>Cyclist safety, blind spots, vulnerable road users,
+						object detection, semi-trailer trucks</i></p>
+			</div>
+			<div class="col-md-5 d-flex align-items-center mx-0">
+				<img class="roundedborder centeredphoto"
+					style="max-width: 500px; justify-content: center; align-content: center; margin: auto;"
+					src="images/graphicalabstract.jpg" alt="Graphical Abstract">
+			</div>
 
-		<img class="roundedborder centeredphoto"
-			style="width: 50%; height: 50%; justify-content: center; margin: auto;"
-			src="images/graphicalabstract.jpg" alt="Graphical Abstract">
+
+		</div>
 	</div>
-	
+
 	<div class="paragraphMarginEngineering center">
 		<h3>Research Proposal</h3>
-		
-		<p>Click <a class="hyperlink" href="STW.html">here to read supporting project documents.</a></p>
-		
+
+		<p>Click <a class="hyperlink" href="STW.html" target="0">here to read supporting project documents.</a></p>
+
 	</div>
-	
+
 	<div class="flex paragraphMarginEngineering">
 		<div class="center">
 			<h3 class="engineering">Engineering Problem</h3>
@@ -104,7 +110,7 @@
 			<h3 class="engineering">Engineering Goal</h3>
 		</div>
 	</div>
-	
+
 	<div class="flex paragraphMarginEngineering">
 		<p class="stemwords">Semi-trailer truck drivers often have trouble
 			identifying cyclists in their blind spots when making right-hand
@@ -113,139 +119,217 @@
 			engineer a device that can detect cyclists in a truck’s right-rear
 			blind spot and provide alerts for semi-trailer truck drivers.</p>
 	</div>
-	
+
 	<div class="paragraphMargin">
 		<h3>Background</h3>
-
-		<p class="stemwords">Cyclists often face risks when traveling
-			along a road or path with other motorized vehicles; in the U.S., over
-			1,000 cyclists die in road accidents, and 130,000 more are injured
-			yearly (Centers for Disease Control and Prevention [CDC], 2022). Over
-			71% of cyclist collisions happen in urban areas, with 30% of
-			collisions happening at intersections. These cyclist accidents can be
-			attributed to a lack of visual attention, including distraction,
-			which is a leading cause of over 55% of vehicle-cyclist collisions
-			(Jannat et al., 2020). One type of collision that frequently occurs
-			between cyclists and vehicles is in a right-hook turn. Right-hook
-			collisions occur at intersections when right-turning vehicles collide
-			with a cyclist moving straight forwards along the right side of the
-			road. These types of collisions occur when drivers do not detect
-			cyclists in their oncoming blind spots or when cyclists do not
-			observe that a driver is going to take a right turn. Additionally,
-			semi-trailer trucks are disproportionately involved in more severe
-			cyclist collisions compared to other vehicles (Richter & Sachs,
-			2017). When a semi-trailer truck makes a right turn, the blind spot
-			from the right rearview mirror increases as the view is blocked by
-			the trailer's body. This makes turns especially dangerous because
-			VRUs in this blind spot zone cannot be detected and face a high risk
-			of collision and fatality (Wang et al., 2022). There exists a need
-			for driver assistance systems in order to mitigate risks caused by
-			vehicle blind spots and prevent truck-cyclist collisions.</p>
+		<div class="container">
+			<div class="row flex-nowrap">
+				<div class="col-md-8">
+					<p class="stemwords">Cyclists often face risks when traveling
+						along a road or path with other motorized vehicles; in the U.S., over
+						1,000 cyclists die in road accidents, and 130,000 more are injured
+						yearly (Centers for Disease Control and Prevention [CDC], 2022). Over
+						71% of cyclist collisions happen in urban areas, with 30% of
+						collisions happening at intersections. These cyclist accidents can be
+						attributed to a lack of visual attention, including distraction,
+						which is a leading cause of over 55% of vehicle-cyclist collisions
+						(Jannat et al., 2020). One type of collision that frequently occurs
+						between cyclists and vehicles is in a right-hook turn. Right-hook
+						collisions occur at intersections when right-turning vehicles collide
+						with a cyclist moving straight forwards along the right side of the
+						road. These types of collisions occur when drivers do not detect
+						cyclists in their oncoming blind spots or when cyclists do not
+						observe that a driver is going to take a right turn. Additionally,
+						semi-trailer trucks are disproportionately involved in more severe
+						cyclist collisions compared to other vehicles (Richter & Sachs,
+						2017). When a semi-trailer truck makes a right turn, the blind spot
+						from the right rearview mirror increases as the view is blocked by
+						the trailer's body. This makes turns especially dangerous because
+						VRUs in this blind spot zone cannot be detected and face a high risk
+						of collision and fatality (Wang et al., 2022). There exists a need
+						for driver assistance systems in order to mitigate risks caused by
+						vehicle blind spots and prevent truck-cyclist collisions.</p>
+				</div>
+				<div class="col-md-4 d-flex align-items-center mx-0">
+					<img class="roundedborder centeredphoto"
+						style="max-width: 300px; justify-content: center; align-content: center; margin: auto;"
+						src="images/bg_infographic.png" alt="Background Infographic">
+				</div>
+			</div>
+		</div>
 	</div>
-	
+
 	<div class="paragraphMargin">
 		<h3>Methodology</h3>
 
-		<p class="stemwords">The overall aim of this project was to
-			engineer a device that can detect cyclists in a truck’s right-rear
-			blind spot and provide alerts for semi-trailer truck drivers. We set
-			three major objectives. (1) Develop a system that can actively detect
-			cyclists with greater than 80% mAP. (2) Create warnings for cyclists
-			in a truck’s right-rear blind spot within a two-second interval. (3)
-			Make it portable and installable on most semi-trailer trucks.</p>
+		<div class="container">
+			<div class="row wrap">
+				<div class="col-md-8">
+					<p class="stemwords">The overall aim of this project was to
+						engineer a device that can detect cyclists in a truck’s right-rear
+						blind spot and provide alerts for semi-trailer truck drivers. We set
+						three major objectives. (1) Develop a system that can actively detect
+						cyclists with greater than 80% mAP. (2) Create warnings for cyclists
+						in a truck’s right-rear blind spot within a two-second interval. (3)
+						Make it portable and installable on most semi-trailer trucks.</p>
 
-		<p class="stemwords">First, a new proposed dataset was created by
-			combining the CIMAT cyclist dataset with images available from the
-			web and synthetic cyclist images in virtual urban environments from
-			Parallel Domain’s Open Synthetic Dataset for Improving Cyclist
-			Detection (Thomas et al., 2021). Then, the collected images were
-			annotated with bounding boxes using Roboflow API and exported as a
-			single-class cyclist Pascal VOC dataset with an 80-20%
-			train-validation split (Dwyer & Nelson, 2022; Everingham et al.,
-			2012).</p>
+					<p class="stemwords">First, a new proposed dataset was created by
+						combining the CIMAT cyclist dataset with images available from the
+						web and synthetic cyclist images in virtual urban environments from
+						Parallel Domain’s Open Synthetic Dataset for Improving Cyclist
+						Detection (Thomas et al., 2021). Then, the collected images were
+						annotated with bounding boxes using Roboflow API and exported as a
+						single-class cyclist Pascal VOC dataset with an 80-20%
+						train-validation split (Dwyer & Nelson, 2022; Everingham et al.,
+						2012).</p>
 
-		<p class="stemwords">Next, we fine-tuned a cyclist detection model
-			using the SSD MobileNet V2 and EfficientDet Lite model architecture
-			due to their lightweight memory and CPU/TPU usage and strong
-			performance with real-time detection (Sandler et al., 2018; Tan et
-			al., 2020). Using the Tensorflow Object Detection API and the
-			Tensorflow Lite Model Maker API, the dataset was used to fine-tune an
-			SSD MobileNet and EfficientDet Lite model for a total of 50 epochs.</p>
+					<p class="stemwords">Next, we fine-tuned a cyclist detection model
+						using the SSD MobileNet V2 and EfficientDet Lite model architecture
+						due to their lightweight memory and CPU/TPU usage and strong
+						performance with real-time detection (Sandler et al., 2018; Tan et
+						al., 2020). Using the Tensorflow Object Detection API and the
+						Tensorflow Lite Model Maker API, the dataset was used to fine-tune an
+						SSD MobileNet and EfficientDet Lite model for a total of 50 epochs.</p>
 
-		<p class="stemwords">Then, the trained cyclist detection models
-			were deployed onto the Google Coral Dev Board with a camera module.
-			The Google Coral Dev Board provides state-of-the-art performance
-			concerning object detection inferences in real-time applications
-			(Seshadri et al., 2022). Using the Google Coral Dev Board, the frames
-			per second (FPS) of each object detection model’s inferences were
-			also recorded.</p>
+					<p class="stemwords">Then, the trained cyclist detection models
+						were deployed onto the Google Coral Dev Board with a camera module.
+						The Google Coral Dev Board provides state-of-the-art performance
+						concerning object detection inferences in real-time applications
+						(Seshadri et al., 2022). Using the Google Coral Dev Board, the frames
+						per second (FPS) of each object detection model’s inferences were
+						also recorded.</p>
 
-		<p class="stemwords">Finally, we constructed a real-time testing
-			environment with a cyclist, a fixed mount for the blind spot device,
-			and the blind spot device. The cyclist was guided down a straight
-			path to simulate a through-going cyclist. The device was tested
-			qualitatively for its effectiveness in detecting cyclists from the
-			viewpoint of a truck cab and for inference speed.</p>
+					<p class="stemwords">Finally, we constructed a real-time testing
+						environment with a cyclist, a fixed mount for the blind spot device,
+						and the blind spot device. The cyclist was guided down a straight
+						path to simulate a through-going cyclist. The device was tested
+						qualitatively for its effectiveness in detecting cyclists from the
+						viewpoint of a truck cab and for inference speed.</p>
+				</div>
+				<div class="col-md-4 d-flex align-items-center mx-0">
+					<img class="roundedborder centeredphoto"
+						style="max-width: 300px; justify-content: center; align-content: center; margin: auto;"
+						src="images/methods.png" alt="Methods Infographic">
+				</div>
+			</div>
+		</div>
 	</div>
-	
+
 	<div class="paragraphMargin">
 		<h3>Figures</h3>
 
-		<p class="stemwords">In construction.</p>
+		<div class="container">
+			<div class="row wrap">
+				<div class="col-md-6">
+					<h3 class="text-center" style="font-size: 2.5vw">Figure 1</h3>
+					<img class="roundedborder centeredphoto"
+						style="max-width: 400px; justify-content: center; align-content: center"
+						src="images/histogram.jpg" alt="Figure 1">
+				</div>
+				<div class="col-md-6">
+					<h3 class="text-center" style="font-size: 2.5vw">Figure 2</h3>
+					<img class="roundedborder centeredphoto"
+						style="max-width: 400px; justify-content: center; align-content: center"
+						src="images/mapcimat.jpg" alt="Figure 2">
+				</div>
+				<div class="col-md-6">
+					<h3 class="text-center" style="font-size: 2.5vw">Figure 3</h3>
+					<img class="roundedborder centeredphoto"
+						style="max-width: 400px; justify-content: center; align-content: center"
+						src="images/maproboflow.jpg" alt="Figure 3">
+				</div>
+				<div class="col-md-6">
+					<h3 class="text-center" style="font-size: 2.5vw">Figure 4</h3>
+					<img class="roundedborder centeredphoto"
+						style="max-width: 400px; justify-content: center; align-content: center" src="images/frames.jpg"
+						alt="Figure 4">
+				</div>
+			</div>
+		</div>
 	</div>
-	
+
 	<div class="paragraphMargin">
 		<h3>Analysis</h3>
 
-		<p class="stemwords">In construction.</p>
+		<p class="stemwords text-center">Click <a class="hyperlink" href="https://gitlab03.wpi.edu/ctang5/cyclistdetectiondataset" target="0">here to access the cyclist dataset.</a></p>
+
+		<p class="stemwords">Our proposed auxiliary cyclist dataset contains 20,406 cyclist images with over 40,000
+			cyclist instances collected from synthetically generated images and collected images from various online
+			sources (Thomas et al., 2021). This dataset serves as an extension to the 12,000 cyclist images from the
+			CIMAT cyclist dataset and has a greater focus on edge cases, such as night-time, rainy, and busy urban
+			environments (Thomas et al., 2021). Initially, 6,802 images were collected, and the images were
+			augmented to generate new data points and triple the dataset size. Figure 1 outlines the number of cyclist
+			instances per image. There
+			was an average of 2.2 cyclist instances per image, meaning that this dataset has high cyclist density and
+			was adequate for the cyclist detection task.
+		</p>
+
+		<p class="stemwords"> The three single-class cyclist detection models were evaluated using average precision
+			(AP) metrics for accuracy. The mAP results are described in Figure 2 and 3. The results show that the
+			EfficientDet
+			Lite 1 and the EfficientDet Lite 2 are the highest-performing models, with an mAP of 95.6% and 95.4% at the
+			IoU threshold of 0.5, respectively, on the newly proposed validation set. The SSD MobileNetV2 model
+			performed the weakest at 84.7% mAP (IoU 0.5).
+			The mAP was measured to determine the effectiveness of this cyclist detection system.
+		</p>
+
+		<p class="stemwords">
+			The testing scenario was designed to model a right-hook turn made by a truck near or in front of a
+			through-going cyclist. The SSD MobileNetV2 object detection architecture made the
+			fastest inference times at 70.6 FPS or 0.0142 seconds of inference time (latency). Figure 4 shows the
+			cyclist detection model speeds from real-time testing. Each cyclist detection model performed adequately to
+			the objectives set for this project.
+		</p>
 	</div>
-	
+
+
 	<div class="paragraphMargin">
 		<h3>Discussion/Conclusion</h3>
 
-		<p class="stemwords">In construction.</p>
+		<iframe src="docs/discussion-conclusion.pdf#view=FitH"></iframe>
 	</div>
-	
+
 	<div class="paragraphMargin">
 		<h3>References</h3>
 
-		<p class="stemwords">In construction.</p>
+		<iframe src="docs/references.pdf#view=FitH"></iframe>
 	</div>
-	
+
 	<div class="paragraphMargin">
 		<h3>February Fair Poster</h3>
 
-		<p class="stemwords">In construction.</p>
+		<iframe src="docs/febfair.pdf#view=FitH"></iframe>
 	</div>
-	
-		
 
-		
-		
+
+
+
+
 
 	<!-- Made with the help of https://www.w3schools.com/TAgs/tag_footer.asp-->
-		<footer>
-			<div class="divSpace">
-			
-				<div class="divCols">
-					<div class="footerBox">
-						<a class="footerLink" href="https://www.github.com/charlestang06" target="0">GitHub</a>
-					</div>
-				</div>
-				
-				<div class="divCols">
-					<div class="footerBox">
-						<a class="footerLink" href="https://www.linkedin.com/in/charlestang06/" target="0">Linkedin</a>
-					</div>
-				</div>
-				
-				<div class="divCols">
-					<div class="footerBox">
-						<a class="footerLink" href="mailto:ctang5@wpi.edu">Email</a>
-					</div>
+	<footer>
+		<div class="divSpace">
+
+			<div class="divCols">
+				<div class="footerBox">
+					<a class="footerLink" href="https://www.github.com/charlestang06" target="0">GitHub</a>
 				</div>
 			</div>
-		</footer>
 
-	</body>
+			<div class="divCols">
+				<div class="footerBox">
+					<a class="footerLink" href="https://www.linkedin.com/in/charlestang06/" target="0">Linkedin</a>
+				</div>
+			</div>
+
+			<div class="divCols">
+				<div class="footerBox">
+					<a class="footerLink" href="mailto:ctang5@wpi.edu">Email</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
 </html>
