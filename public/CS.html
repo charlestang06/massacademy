@@ -1,101 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Computer Science</title>
-		<link rel="stylesheet" href="MyStyle.css">
-		<link rel="icon" type="image/x-icon" href="images/snoopy-dab.ico">
-		
-		<!-- Made with the help of https://www.w3schools.com/howto/howto_js_mobile_navbar.asp  -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="script.js"></script>
-	</head>
-	
-	<body>
-	<!--  Navigation Bar with the help of  https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
-		<div class="topnav" id="myTopnav">
-			  <a href="index.html">Home</a>
-			  <a href="About.html">About</a>
-			  <a href="Extracurriculars.html">Extracurriculars</a>
-			  <a class="active" href="CS.html">CS</a>
-			  <a href="Humanities.html">Humanities</a>
-			  <a href="Physics.html">Physics</a>
-			  <a href="Math.html">Math</a>
-			  <a href="STEM_I.html">STEM I</a>
-			  <a href="STEM_II.html">STEM II</a>
-			  <a href="Spanish.html">Spanish</a>
-			  <a href="javascript:void(0);" class="icon" onclick="showLinks()">
-		  		<i class="fa fa-bars"></i>
-		 	  </a>
-		</div>
-		
-		<div class="gradient-color">
-			<h1 class="fade-in-header">Computer Science</h1>
-		</div>
-		
-		<div class="paragraphMargin">
-			<p>This year’s Computer Science course is taught by Mrs. Taricco and
-			introduces us to Java, HTML, CSS, web design, and software
-			engineering principles. For A term, we developed our own personal
-			websites using HTML and CSS. For B term, I was a part of the advanced CS
-			track where we developed a project to improve the technology at our school.
-		</p>
-		</div>
-		
-		<div class="paragraphMargin">
-		<h3>CHMOD Problem</h3>
-		<p>In A term, we attempted to solve difficult coding challenges.
-			One of these problems was CHMOD, a problem from the American Computer
-			Science League (ACSL), where we process Linux commands to change file
-			editing permissions. The following is the code solution to the
-			problem. I found this problem very enjoyable because it exposed me to
-			a lot of different coding strategies.</p>
-		<iframe src="docs/CHMOD.pdf#view=FitH"></iframe>
-		</div>
-		
-		<div class="paragraphMargin">
-		<h3>RFID Sign-in/out System</h3>
-		<p>
-			In B term, <a class="hyperlink" href="https://users.wpi.edu/~teswar"
-				target=0>Tarun Eswar</a>, <a class="hyperlink"
-				href="https://users.wpi.edu/~dbarsoum" target=0>David Barsoum</a>,
-			and I worked on our independent project to improve the sign-in/out
-			system at MAMS. The previous sign-in system at Mass Academy was very
-			mechanical and time-consuming. We developed this project to improve
-			the efficiency and technology related to the sign-in and sign-out
-			methods. This digital sign-in/out system uses SQL databases, ReactJS
-			web portal, NodeJS backend, and a Raspberry Pi device for interacting
-			with RFID tags. The following document is a deliverable that outlines
-			the design of the project.
-		</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Science</title>
+    <link rel="stylesheet" href="MyStyle.css" />
+    <link rel="icon" type="image/x-icon" href="images/snoopy-dab.ico" />
 
-		<iframe src="docs/rfid.pdf#view=FitH"></iframe>
-		</div>
-	
-		<!-- Made with the help of https://www.w3schools.com/TAgs/tag_footer.asp-->
-		<footer>
-			<div class="divSpace">
-			
-				<div class="divCols">
-					<div class="footerBox">
-						<a class="footerLink" href="https://www.github.com/charlestang06" target="0">GitHub</a>
-					</div>
-				</div>
-				
-				<div class="divCols">
-					<div class="footerBox">
-						<a class="footerLink" href="https://www.linkedin.com/in/charlestang06/" target="0">Linkedin</a>
-					</div>
-				</div>
-				
-				<div class="divCols">
-					<div class="footerBox">
-						<a class="footerLink" href="mailto:ctang5@wpi.edu">Email</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-	
-	</body>
+    <!-- Made with the help of https://www.w3schools.com/howto/howto_js_mobile_navbar.asp  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!--  Navigation Bar with the help of  https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Extracurriculars.html">Extracurriculars</a>
+      <a class="active" href="CS.html">CS</a>
+      <a href="Humanities.html">Humanities</a>
+      <a href="Physics.html">Physics</a>
+      <a href="Math.html">Math</a>
+      <a href="STEM_I.html">STEM I</a>
+      <a href="STEM_II.html">STEM II</a>
+      <a href="Spanish.html">Spanish</a>
+      <a href="javascript:void(0);" class="icon" onclick="showLinks()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="gradient-color">
+      <h1 class="fade-in-header">Computer Science</h1>
+    </div>
+
+    <div class="paragraphMargin">
+      <p>
+        This year’s Computer Science course is taught by Mrs. Taricco and
+        introduces us to Java, HTML, CSS, web design, and software engineering
+        principles. For A term, we developed our own personal websites using
+        HTML and CSS. For B term, I was a part of the advanced CS track where we
+        developed a project to improve the technology at our school.
+      </p>
+    </div>
+
+    <div class="paragraphMargin">
+      <h3>CHMOD Problem</h3>
+      <p>
+        In A term, we attempted to solve difficult coding challenges. One of
+        these problems was CHMOD, a problem from the American Computer Science
+        League (ACSL), where we process Linux commands to change file editing
+        permissions. The following is the code solution to the problem. I found
+        this problem very enjoyable because it exposed me to a lot of different
+        coding strategies.
+      </p>
+      <iframe src="docs/CHMOD.pdf#view=FitH"></iframe>
+    </div>
+
+    <div class="paragraphMargin">
+      <h3>MAMS Digital Sign-In/Out System (SISO)</h3>
+      <p>
+        In B term,
+        <a class="hyperlink" href="https://users.wpi.edu/~teswar" target="0"
+          >Tarun Eswar</a
+        >,
+        <a class="hyperlink" href="https://users.wpi.edu/~dbarsoum" target="0"
+          >David Barsoum</a
+        >, and I worked on our independent project to improve the sign-in/out
+        system at MAMS. The previous sign-in system at Mass Academy was very
+        mechanical and time-consuming. We developed this project to improve the
+        efficiency and technology related to the sign-in and sign-out methods.
+        This digital sign-in/out system uses SQL databases, ReactJS web portal,
+        NodeJS backend, and a Raspberry Pi device for interacting with RFID
+        tags. The following document is a deliverable that outlines the design
+        of the project. Learn more about this project
+        <a
+          class="hyperlink"
+          href="https://mass-academy-sign-in-system.web.app/"
+          target="0"
+          >here</a
+        >.
+      </p>
+
+      <iframe src="docs/rfid.pdf#view=FitH"></iframe>
+    </div>
+
+    <div class="paragraphMargin">
+      <h3>Pantry Access (Apps for Good)</h3>
+      <p>
+        The final project in the Computer Science course is Apps for Good. We
+        are assigned to groups of 3-4 people, where we work together to develop
+        an mobile application that can be used to support the lives of people.
+        The problem my group focused on was digitzing the process of managing
+        food pantries' inventories as well as streamlining the request process
+        for clients to get in touch with pantries. To address this issue, my
+        group developed a cross-platform web application called Pantry Access
+        which is a universal food pantry application for both clients and pantry
+        organizers. Learn more about this project
+        <a class="hyperlink" href="https://pantryaccess.web.app" target="0"
+          >here</a
+        >.
+      </p>
+    </div>
+    <div class="paragraphMargin">
+      <div class="container">
+        <div class="row flex-nowrap">
+          <div class="col-md-6">
+            <p class="stemwords">
+              <b>Problem Statement</b>: Food pantries often have trouble
+              maintaining their inventories and organizing their food supply to
+              deliver items to clients effectively. Furthermore, with a growing
+              demand in food banks, there is a pressing need for software that
+              can connect food pantries and clients.
+            </p>
+            <p class="stemwords">
+              <b>Target Audience</b>: The target audience of the proposed
+              application are food bank volunteers, food bank management, and
+              potential clients and donors.
+            </p>
+            <p class="stemwords">
+              <b>Solution</b>: We built a cross-platform cloud-based application
+              that improves the organization of food pantries and communication
+              between clients and food banks.
+            </p>
+            <p class="stemwords">
+              <b>Minimal Viable Product (MVP)</b> The three core features of
+              this application are (in order of precedence): (1) Collect and
+              manage the inventory of food banks into a database that tracks
+              current inventory, quantities, and locations of the foods; (2)
+              allow clients to access and view the inventories of food banks
+              through a user-friendly interface; (3) create unique profiles for
+              clients, food banks, or donors to foster stronger client-food-bank
+              or donor-food-bank relations.
+            </p>
+            <p class="stemwords">
+              <b>Features and Algorithms</b>: To allow this application to be
+              cross-platform, we utilized Firebase's Firestore and hosting cloud
+              services. Our sorting algorithms for managing food pantry
+              inventories are provided with the Material-UI (MUI) Component
+              Library.
+            </p>
+          </div>
+          <div class="col-md-6 d-flex align-items-center mx-0">
+            <iframe
+              class="roundedborder centeredphoto"
+              style="
+                max-width: 500px;
+                justify-content: center;
+                align-content: center;
+                margin: auto;
+              "
+              src="docs/pantryaccessposter.pdf#view=FitH"
+              alt="AFG Poster"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Made with the help of https://www.w3schools.com/TAgs/tag_footer.asp-->
+    <footer>
+      <div class="divSpace">
+        <div class="divCols">
+          <div class="footerBox">
+            <a
+              class="footerLink"
+              href="https://www.github.com/charlestang06"
+              target="0"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
+        <div class="divCols">
+          <div class="footerBox">
+            <a
+              class="footerLink"
+              href="https://www.linkedin.com/in/charlestang06/"
+              target="0"
+              >Linkedin</a
+            >
+          </div>
+        </div>
+
+        <div class="divCols">
+          <div class="footerBox">
+            <a class="footerLink" href="mailto:ctang5@wpi.edu">Email</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
