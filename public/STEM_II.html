@@ -1,70 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>STEM II</title>
-		<link rel="stylesheet" href="MyStyle.css">
-		<link rel="icon" type="image/x-icon" href="images/snoopy-dab.ico">
-		
-		<!-- Made with the help of https://www.w3schools.com/howto/howto_js_mobile_navbar.asp  -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="script.js"></script>
-	</head>
-	
-	<body>
-	<!--  Navigation Bar with the help of  https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
-		<div class="topnav" id="myTopnav">
-		  <a href="index.html">Home</a>
-		  <a href="About.html">About</a>
-		  <a href="Extracurriculars.html">Extracurriculars</a>
-		  <a href="CS.html">CS</a>
-		  <a href="Humanities.html">Humanities</a>
-		  <a href="Physics.html">Physics</a>
-		  <a href="Math.html">Math</a>
-		  <a href="STEM_I.html">STEM I</a>
-		  <a class="active" href="STEM_II.html">STEM II</a>
-		  <a href="Spanish.html">Spanish</a>
-		  <a href="javascript:void(0);" class="icon" onclick="showLinks()">
-		  		<i class="fa fa-bars"></i>
-		  </a>
-		</div>
-		
-		<div class="gradient-color">
-			<h1 class="fade-in-header">STEM II</h1>
-		</div>
-		
-		<div class="paragraphMargin">
-		<p>STEM II is taught by Dr. Crowthers in the second half the year,
-			where we develop assistive devices in groups. In STEM II, we follow
-			the engineering design process in groups, where we design, develop,
-			and test a device that can support someone with a disability.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STEM II</title>
+    <link rel="stylesheet" href="MyStyle.css" />
+    <link rel="icon" type="image/x-icon" href="images/snoopy-dab.ico" />
 
-		</div>
-		
-		<!-- Made with the help of https://www.w3schools.com/TAgs/tag_footer.asp-->
-		<footer>
-			<div class="divSpace">
-			
-				<div class="divCols">
-					<div class="footerBox">
-						<a class="footerLink" href="https://www.github.com/charlestang06" target="0">GitHub</a>
-					</div>
-				</div>
-				
-				<div class="divCols">
-					<div class="footerBox">
-						<a class="footerLink" href="https://www.linkedin.com/in/charlestang06/" target="0">Linkedin</a>
-					</div>
-				</div>
-				
-				<div class="divCols">
-					<div class="footerBox">
-						<a class="footerLink" href="mailto:ctang5@wpi.edu">Email</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-		
-	</body>
+    <!-- Made with the help of https://www.w3schools.com/howto/howto_js_mobile_navbar.asp  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="bootstrap.css" />
+  </head>
+
+  <body>
+    <!--  Navigation Bar with the help of  https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+    <div class="topnav" id="myTopnav" style="width: 100%">
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Extracurriculars.html">Extracurriculars</a>
+      <a href="CS.html">CS</a>
+      <a href="Humanities.html">Humanities</a>
+      <a href="Physics.html">Physics</a>
+      <a href="Math.html">Math</a>
+      <a href="STEM_I.html">STEM I</a>
+      <a class="active" href="STEM_II.html">STEM II</a>
+      <a href="Spanish.html">Spanish</a>
+      <a href="javascript:void(0);" class="icon" onclick="showLinks()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="gradient-color">
+      <h1 class="fade-in-header">STEM II</h1>
+    </div>
+
+    <div class="paragraphMargin">
+      <p>
+        STEM II is taught by Dr. Crowthers in the second half the year, where we
+        develop assistive devices in groups. In STEM II, we follow the
+        engineering design process in groups, where we design, develop, and test
+        a device that can support someone with a disability.
+      </p>
+    </div>
+
+    <h2 class="stemtitle">
+      SEARCH: Smart Electronic Assistance and Retrieval Companion for Home
+    </h2>
+
+    <div class="paragraphMargin">
+      <h3>Problem Description</h3>
+
+      <p class="stemwords">
+        Over 40% of people will experience some form of memory loss by the time
+        they turn 60 years old. While memory loss and mental impairments come in
+        many forms, one of the most common symptoms includes misplacing
+        important objects such as wallets, keys, hearing aids, and glasses. This
+        significantly impacts the ability of elderly people to live
+        independently. Coupled with declining eyesight and physical strength,
+        searching through an entire living space for objects can be extremely
+        strenuous for elderly people, and can often end up being unsuccessful.
+        While current widespread solutions in production to track and locate
+        missing objects, such as Air Tags and Tile Trackers, use Bluetooth
+        transmitters, the resolution of these devices is limited to areas often
+        larger than the entire house, making it unsuitable for isolating a
+        specific area of the house for an elderly person to search.
+      </p>
+
+      <h3>Approach</h3>
+
+      <p class="stemwords">
+        Our design will be a rover-based device equipped with computer vision
+        technologies that can be a powerful tool for locating misplaced items.
+        The device can navigate autonomously through an environment on the
+        ground while using its onboard cameras and advanced object recognition
+        algorithms to identify and locate specific objects. Once an item has
+        been located, the device can alert the user to its location through a
+        cloud-based mobile application. This technology has the potential to
+        save time and reduce frustration by quickly locating lost or misplaced
+        items.
+      </p>
+    </div>
+
+    <div class="paragraphMargin">
+      <h3>Images</h3>
+
+      <div class="container">
+        <div class="row wrap">
+          <div class="col-md-6">
+            <img
+              class="roundedborder centeredphoto"
+              style="
+                max-width: 400px;
+                justify-content: center;
+                align-content: center;
+              "
+              src="images/roverdiagram.jpg"
+              alt="Image 1"
+            />
+          </div>
+          <div class="col-md-6">
+            <img
+              class="roundedborder centeredphoto"
+              style="
+                max-width: 400px;
+                justify-content: center;
+                align-content: center;
+              "
+              src="images/roverpic.jpg"
+              alt="Image 2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="paragraphMargin">
+      <h3>Final Product</h3>
+      <div class="container">
+        <div class="row wrap">
+          <div class="col-md-6">
+            <h3>Design Study</h3>
+            <iframe
+              style="height: 300px"
+              src="docs/STEM2_10_Final_DesignStudy.pdf#view=FitH"
+            ></iframe>
+          </div>
+          <div class="col-md-6">
+            <h3>Picture</h3>
+            <img
+              class="roundedborder centeredphoto"
+              style="
+                max-width: 100px;
+                justify-content: center;
+                align-content: center;
+              "
+              src="images/roverfinaldesign.jpg"
+              alt="Image 2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="paragraphMargin">
+      <h3>Additional Links</h3>
+      <div class="container">
+        <div class="row wrap">
+          <div class="col-md-6">
+            <h3>Handout</h3>
+            <p>
+              Click
+              <a
+                class="hyperlink"
+                href="https://joe-and-sons-inc.github.io/qrcodehandout/handout.pdf"
+                target="0"
+                >here</a
+              >
+              to access a handout of our product.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h3>Design Req.</h3>
+            <iframe
+              style="
+                max-width: 400px; height: 400px;
+                justify-content: center;
+                align-content: center;
+                margin: auto;
+              "
+              src="docs/TRR-10-Requirements.pdf#view=FitH"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="paragraphMargin">
+      <h3>Poster</h3>
+      <iframe
+        style="max-width: 800px; height: 1000px"
+        src="docs/STEM2_10_ADR_POSTER.pdf#view=FitH"
+      ></iframe>
+    </div>
+
+    <!-- Made with the help of https://www.w3schools.com/TAgs/tag_footer.asp-->
+    <footer>
+      <div class="divSpace">
+        <div class="divCols">
+          <div class="footerBox">
+            <a
+              class="footerLink"
+              href="https://www.github.com/charlestang06"
+              target="0"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
+        <div class="divCols">
+          <div class="footerBox">
+            <a
+              class="footerLink"
+              href="https://www.linkedin.com/in/charlestang06/"
+              target="0"
+              >Linkedin</a
+            >
+          </div>
+        </div>
+
+        <div class="divCols">
+          <div class="footerBox">
+            <a class="footerLink" href="mailto:ctang5@wpi.edu">Email</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
